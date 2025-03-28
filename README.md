@@ -29,8 +29,6 @@
 * Follow these steps to set up the project locally:
 
 * Clone the Repository
-
-* git clone https://github.com/your-username/video-storage-app.git
 * cd video-storage-app
 
 # Backend Setup
