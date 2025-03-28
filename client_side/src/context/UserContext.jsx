@@ -19,10 +19,11 @@ export const UserProvider = ({ children }) => {
     }
   }, []);
 
+  // https://video-uploading-4.onrender.com/    http://localhost:3030/api/user/signup
   const signup = async (formData) => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:3030/api/user/signup", {
+      const response = await fetch("https://video-uploading-4.onrender.com/api/user/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +49,7 @@ export const UserProvider = ({ children }) => {
   const login = async (formData) => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:3030/api/user/login", {
+      const response = await fetch("https://video-uploading-4.onrender.com/api/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

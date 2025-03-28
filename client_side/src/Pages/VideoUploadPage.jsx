@@ -46,7 +46,7 @@ const VideoUploadPage = () => {
       formPayload.append("video", formData.video);
 
       const response = await fetch(
-        `http://localhost:3030/api/videos/${user.id}`,
+        `https://video-uploading-4.onrender.com/api/videos/${user.id}`,
         {
           method: "POST",
           headers: {

@@ -19,7 +19,7 @@ const VideoDisplayPage = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `http://localhost:3030/api/videos/${user.id}`,
+          `https://video-uploading-4.onrender.com/api/videos/${user.id}`,
           {
             headers: {
               Authorization: `Bearer ${user.token}`,
