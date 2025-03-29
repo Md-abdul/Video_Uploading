@@ -4,8 +4,10 @@
   "description": "* User Authentication: Signup, login, and logout functionality.",
   "main": "index.js",
   "scripts": {
+    "backend": "node Server_Sides/server.js",
+    "frontend": "cd client_side && npm run dev",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
     "build": "cd Server_Sides && npm install && cd ../client_side && npm install && npm run build",
-    "start": "concurrently \"cd Server_Sides && npm start\" \"cd client_side && npm run dev\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
