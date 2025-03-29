@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cd Server_Sides && npm install && cd ../client_side && npm install && npm run build",
-    "start": "concurrently \"cd Server_Sides && npm run dev\" \"cd client_side && npm start\"",
+    "start": "concurrently \"cd Server_Sides && npm start\" \"cd client_side && npm run dev\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
