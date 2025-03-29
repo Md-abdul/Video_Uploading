@@ -1,0 +1,17 @@
+{
+  "name": "video_uploading",
+  "version": "1.0.0",
+  "description": "* User Authentication: Signup, login, and logout functionality.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd Server_Sides && npm install && cd ../client_side && npm install && npm run build",
+    "start": "concurrently \"cd server_side && npm run dev\" \"cd client_side && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
